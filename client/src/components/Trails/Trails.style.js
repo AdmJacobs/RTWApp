@@ -30,26 +30,16 @@ export const Paragraph = styled.p`
   @media (max-width: 320px) {
     font-size: 16px;
   }
-  /* Remove default focus from target elements */  
-  .video-link:focus,
-  .video-link_content:focus {
-    outline: none;
+`;
+export const Hr = styled.hr`
+  margin-bottom: 30px;
+  @media (min-width: 576px) {
+    margin-bottom: 40px;
   }
-  /* Only when the outer element is reached by a keyboard, apply the focus styles. Now clicking on the element won't focus the link */  
-  .video-link:focus > .video-link_content {
-    color: turquoise;
-    /* Apply default focus styles */
-    outline: 3px solid turquoise;
+  @media (min-width: 992px) {
+    margin-bottom: 50px;
   }
-  a {
-    user-select: none;  
-    -webkit-tap-highlight-color: transparent;
-    color: inherit;
-    :hover {
-      color: turquoise;
-      @media (hover: none) {
-        color: inherit;
-      }
-    }
+  @media (min-width: 1200px) {
+    display: none;
   }
 `;

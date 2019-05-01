@@ -28,9 +28,10 @@ const About = () => (
         role="banner"
       >
         <Row
-          mb={{ xs: "30px", sm: "40px", lg: "50px", xl: "60px" }}
+          mb={{ xs: "20px", sm: "30px", lg: "40px", xl: "50px" }}
         >
-          <Col>
+          <Col
+          xs={18}>
             <Styled.SectionHeading
               as="h1"
             >
@@ -55,7 +56,7 @@ const About = () => (
               style={
                 {
                   display: 'block',
-                  width: '50%',
+                  width: '70%',
                   maxWidth: '400px',
                   margin: '0 auto'
                 }
@@ -71,7 +72,7 @@ const About = () => (
               style={
                 {
                   display: 'block',
-                  width: '50%',
+                  width: '70%',
                   maxWidth: '400px',
                   margin: '0 auto'
                 }
@@ -87,7 +88,7 @@ const About = () => (
               style={
                 {
                   display: 'block',
-                  width: '50%',
+                  width: '70%',
                   maxWidth: '400px',
                   margin: '0 auto'
                 }
